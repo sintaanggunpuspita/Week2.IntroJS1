@@ -31,6 +31,7 @@ function filter (nilai) {
 
 let hasilFilter= dataArray.filter(filter)
 if (hasilFilter.length > 0 && nilaiAkhir > nilaiAwal){
+  hasilFilter.sort(function(a, b){return a-b})
   console.log(hasilFilter)
 }else {
   if (nilaiAkhir < nilaiAwal) {
@@ -38,7 +39,4 @@ if (hasilFilter.length > 0 && nilaiAkhir > nilaiAwal){
   }else {
     console.log("Nilai angka dalam dataArray tidak ada")
   }
-
-dataArray.sort();
-    console.log(dataArray);
 }
